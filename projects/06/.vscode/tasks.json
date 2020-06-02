@@ -1,0 +1,28 @@
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "g++.exe build active file",
+            "command": 
+                "C:\\MinGW\\bin\\g++.exe",
+            "args": [
+                "${file}",   //{workspaceFolder}\\*.cpp for all files in folder
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                
+                ";",
+                "if",
+                "($?)",
+                "{",
+                "${fileDirname}\\${fileBasenameNoExtension}",
+                 "C:\\Users\\bhava\\Desktop\\nand2tetris\\projects\\06\\rect\\Rect.asm",
+                 "}"
+                 
+            ],
+            "options": {
+                "cwd": "C:\\MinGW\\bin"
+            }
+        }
+    ],
+    "version": "2.0.0"
+}
