@@ -6,7 +6,7 @@
 #include"CodeTranslator.h"
 using namespace std;
 
-// VERY IMPORTANT: If the source file has extra line at the end of aseembly code, the output gives an error.
+// VERY IMPORTANT: If the source file has an extra line at the end of assembly code, the output gives an error.
 
 
 int main( int argc,char *argv[])
